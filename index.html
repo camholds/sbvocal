@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SB Vocal Home</title>
+	<link rel="stylesheet" href="sb.css">
+	<link rel="shortcut icon" href="Pics/microphone.ico" />
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p>
+		 <img src="Pics/sbvocalogo.png" alt="SB Vocal Studio" style="width:200px;height:100;" align="center">
+	</p>
+	<div>	                   
+		<ul>
+			<li><a class="active" href="index.html">~Home~</a></li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">⇓ About ⇓</a>
+    			<div class="dropdown-content" id="myDropdown">
+      			<a href="aboutteacher.html">About Shannon</a>
+      			<a href="aboutstudio.html">About the Studio</a>
+    		</div>
+  		</li>
+		<li><a href="events.html">~Upcoming Events~</a></li>
+		<li><a href="contact.html">~Get In Touch~</a></li>
+		<li><a href="pupils.html">~Students~</a></li>
+		<li><a href="apply.html">~Applications~</a></li>
+
+	</ul> 
+	</div>
+			
+	<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<div id="mapid">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1092.6865973994736!2d-113.57512487074291!3d37.11135966822605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca44cd143077e3%3A0x9d06d3c59ce358a7!2s170+N+400+E%2C+St+George%2C+UT+84770!5e1!3m2!1sen!2sus!4v1486854796018" width="250" height="160" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div id="bottom" height="200px" width="100%">
+		<p id="copyright">
+			© 2017 B and C Development inc. & Shannon Birch Vocal Studio
+		</p>
+		<p id="techsupport">
+			For Technical Support Call (435) 627-2925
+		</p>
+	</div>
+</body>
+<html>	

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SB Vocal Students</title>
+		<link rel="stylesheet" href="sb.css">
+		<link rel="shortcut icon" href="Pics/microphone.ico" />
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<p>
+			 <img src="Pics/sbvocalogo.png" alt="SB Vocal Studio" style="width:200px;height:100;" align="center">
+		</p>
+		<div>	                   
+			<ul>
+				<li><a href="index.html">~Home~</a></li>
+				<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">⇓ About ⇓</a>
+    		<div class="dropdown-content" id="myDropdown">
+      			<a href="aboutteacher.html">About Shannon</a>
+      			<a href="aboutstudio.html">About the Studio</a>
+    		</div>
+  		</li>
+		<li><a href="events.html">~Upcoming Events~</a></li>
+		<li><a href="contact.html">~Get In Touch~</a></li>
+		<li><a class="active" href="pupils.html">~Students~</a></li>
+		<li><a href="apply.html">~Applications~</a></li>
+
+		</ul> 
+	</div>
+			
+	<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		    document.getElementById("myDropdown").classList.toggle("show");
+		}
+		
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(e) {
+		  if (!e.target.matches('.dropbtn')) {
+		
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    for (var d = 0; d < dropdowns.length; d++) {
+		      var openDropdown = dropdowns[d];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+	</script>
+
+	<div id="drive">
+		<a href="https://drive.google.com/drive/folders/0B5VpWI47Fj_xOFhWUmpleURfcmc?usp=sharing"><img src="Pics/drivelogo.png" alt="Click for drive folder" class="drive"></a>
+	</div>
+
+	<div id="bottom" height="200px" width="100%">
+		<p id="copyright">
+			© 2017 B and C Development inc. & Shannon Birch Vocal Studio
+		</p>
+		<p id="techsupport">
+			For Technical Support Call (435) 627-2925
+		</p>
+	</div>
+	
+		</body>
+<html>	
